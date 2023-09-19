@@ -1,7 +1,12 @@
 import UIKit
 import Swifter
 import TextEmboss
+import TextEmbossGRPC
 import Logging
+
+import GRPC
+import NIOCore
+import NIOPosix
 
 public enum Errors: Error {
     case notFound
@@ -18,15 +23,37 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        
+        let logger = Logger(label: "org.sfomuseum.text-emboss-grpc-server")
+        let host = "localhost"
+        let port = 1234
+        let threads = 1
+        
+        let s = TextEmbossGRPC.GRPCServer(logger: logger, threads: threads)
+        
+        func Run() throws {
+            Task {
+                try await s.Run(host: host, port: port)
+            }
+        }
+        
+        do {
+            try Run()
+        } catch {
+            fatalError("SAD")
+        }
+        
+        return
+        
         let server = HttpServer();
-        let logger = Logger(label: "org.sfomuseum.text-emboss-server")
+        // let logger = Logger(label: "org.sfomuseum.text-emboss-server")
 
         guard let documentsUrl = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else {
             logger.error("Failed to derive documents directory")
             fatalError("Errors.fileManager")
         }
         
-        let port = 8080
+        // let port = 8080
         let max_size: Int = 10000000 // bytes
         
         server.post["/"] = { r in
