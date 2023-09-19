@@ -18,7 +18,7 @@
 		4A44D8B52ABA277900E82F87 /* TextEmboss in Frameworks */ = {isa = PBXBuildFile; productRef = 4A44D8B42ABA277900E82F87 /* TextEmboss */; };
 		4A6185C92ABA2AE1002EFD83 /* CGRPCZlib in Frameworks */ = {isa = PBXBuildFile; productRef = 4A6185C82ABA2AE1002EFD83 /* CGRPCZlib */; };
 		4A6185CB2ABA2AE1002EFD83 /* GRPC in Frameworks */ = {isa = PBXBuildFile; productRef = 4A6185CA2ABA2AE1002EFD83 /* GRPC */; };
-		4A6185D22ABA3546002EFD83 /* TextEmbossGRPC in Frameworks */ = {isa = PBXBuildFile; productRef = 4A6185D12ABA3546002EFD83 /* TextEmbossGRPC */; };
+		4A6185D82ABA46FC002EFD83 /* TextEmbossGRPC in Frameworks */ = {isa = PBXBuildFile; productRef = 4A6185D72ABA46FC002EFD83 /* TextEmbossGRPC */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +38,7 @@
 				4A44D8B52ABA277900E82F87 /* TextEmboss in Frameworks */,
 				4A44D8AD2ABA274B00E82F87 /* Logging in Frameworks */,
 				4A6185CB2ABA2AE1002EFD83 /* GRPC in Frameworks */,
-				4A6185D22ABA3546002EFD83 /* TextEmbossGRPC in Frameworks */,
+				4A6185D82ABA46FC002EFD83 /* TextEmbossGRPC in Frameworks */,
 				4A6185C92ABA2AE1002EFD83 /* CGRPCZlib in Frameworks */,
 				4A44D8B22ABA275500E82F87 /* SwifterExample in Frameworks */,
 				4A44D8B02ABA275500E82F87 /* Swifter in Frameworks */,
@@ -99,7 +99,7 @@
 				4A44D8B42ABA277900E82F87 /* TextEmboss */,
 				4A6185C82ABA2AE1002EFD83 /* CGRPCZlib */,
 				4A6185CA2ABA2AE1002EFD83 /* GRPC */,
-				4A6185D12ABA3546002EFD83 /* TextEmbossGRPC */,
+				4A6185D72ABA46FC002EFD83 /* TextEmbossGRPC */,
 			);
 			productName = TextEmbossServer;
 			productReference = 4A44D8972ABA270D00E82F87 /* TextEmbossServer.app */;
@@ -134,7 +134,7 @@
 				4A44D8AE2ABA275500E82F87 /* XCRemoteSwiftPackageReference "swifter" */,
 				4A44D8B32ABA277900E82F87 /* XCRemoteSwiftPackageReference "swift-text-emboss" */,
 				4A6185C72ABA2AE1002EFD83 /* XCRemoteSwiftPackageReference "grpc-swift" */,
-				4A6185D02ABA3546002EFD83 /* XCRemoteSwiftPackageReference "swift-text-emboss-grpc" */,
+				4A6185D62ABA46FC002EFD83 /* XCRemoteSwiftPackageReference "swift-text-emboss-grpc" */,
 			);
 			productRefGroup = 4A44D8982ABA270D00E82F87 /* Products */;
 			projectDirPath = "";
@@ -415,7 +415,7 @@
 				minimumVersion = 1.19.1;
 			};
 		};
-		4A6185D02ABA3546002EFD83 /* XCRemoteSwiftPackageReference "swift-text-emboss-grpc" */ = {
+		4A6185D62ABA46FC002EFD83 /* XCRemoteSwiftPackageReference "swift-text-emboss-grpc" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/sfomuseum/swift-text-emboss-grpc";
 			requirement = {
@@ -456,9 +456,9 @@
 			package = 4A6185C72ABA2AE1002EFD83 /* XCRemoteSwiftPackageReference "grpc-swift" */;
 			productName = GRPC;
 		};
-		4A6185D12ABA3546002EFD83 /* TextEmbossGRPC */ = {
+		4A6185D72ABA46FC002EFD83 /* TextEmbossGRPC */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 4A6185D02ABA3546002EFD83 /* XCRemoteSwiftPackageReference "swift-text-emboss-grpc" */;
+			package = 4A6185D62ABA46FC002EFD83 /* XCRemoteSwiftPackageReference "swift-text-emboss-grpc" */;
 			productName = TextEmbossGRPC;
 		};
 /* End XCSwiftPackageProductDependency section */
