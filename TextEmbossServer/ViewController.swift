@@ -42,6 +42,7 @@ class ViewController: UIViewController {
             if threads <= 0 {
                 threads = 1
             }
+	    
             let s = TextEmbossGRPC.GRPCServer(logger: self.logger, threads: threads)
             
             func Run() throws {
