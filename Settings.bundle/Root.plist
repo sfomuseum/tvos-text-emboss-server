@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>StringsTable</key>
+	<string>Root</string>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>Application Settings</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>Title</key>
+			<string>Server Mode</string>
+			<key>Key</key>
+			<string>ServerMode</string>
+			<key>DefaultValue</key>
+			<string>grpc</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>Integer Field</string>
+			<key>Title</key>
+			<string>Port</string>
+			<key>Key</key>
+			<string>Port</string>
+			<key>DefaultValue</key>
+			<string>8080</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>Title</key>
+			<string>Host</string>
+			<key>Key</key>
+			<string>Host</string>
+			<key>DefaultValue</key>
+			<string>localhost</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>Title</key>
+			<string>Port</string>
+			<key>Key</key>
+			<string>Port</string>
+			<key>DefaultValue</key>
+			<string>8080</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>Title</key>
+			<string>MaxSize</string>
+			<key>Key</key>
+			<string>MaxSize</string>
+			<key>DefaultValue</key>
+			<string>1000000</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>Title</key>
+			<string>Threads</string>
+			<key>Key</key>
+			<string>Threads</string>
+			<key>DefaultValue</key>
+			<string>1</string>
+		</dict>
+	</array>
+</dict>
+</plist>
